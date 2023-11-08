@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Curso JavaScript interactivo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <header>
+    <h1>Curso de JavaScript Interactivo</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contenido.html">Modificar contenido HTML</a></li>
+        <li><a href="estilos.html">Modificar estilos CSS</a></li>
+        <li><a href="atributos.html">Modificar atributos HTML</a></li>
+    </ul>
+</nav>
+    
+ 
+<main>
+    <section id="intro">
+
+      <h1>Cambiar la imagen con JavaScript</h1>
+
+      <img id="miImagen" src="img/imagen_original.jpg" alt="Imagen original" width="55px">
+
+<button onclick="cambiarImagen()">Cambiar Imagen</button>
+
+<script>
+function cambiarImagen() {
+    var imagen = document.getElementById('miImagen');
+    imagen.src = 'img/imagen_nueva.png';
+    imagen.alt = 'Imagen nueva';
+}
+</script>
+
+
+  <h2>Código empleado:</h2>
+  <img src="img/atributos.jpg" alt="Modifica atributos html">
+
+      <p><h3>Explicación:</h3></p>
+      <p>El código compone una pequeña interfaz de usuario con una imagen y un botón. La imagen muestra inicialmente una fotografía denominada "imagen_original.jpg". El botón, etiquetado como "Cambiar Imagen", está programado para realizar una acción cuando se hace clic en él.</p>
+      <p>La parte de JavaScript del código, que está incluida en un bloque de &ltscript>, define una función que se activa cuando el usuario interactúa con el botón. Esta función busca la imagen en la página usando su identificador único y luego cambia la fuente de la imagen a "imagen_nueva.png", que es otra fotografía. Además, la descripción alternativa de la imagen (utilizada para accesibilidad y cuando la imagen no se puede mostrar) también se actualiza para reflejar que la imagen ha cambiado.</p>
+      <p>En esencia, el código permite a los usuarios cambiar la imagen que se muestra en la página con solo hacer clic en un botón, demostrando una interacción dinámica en la web usando JavaScript.</p>
+      
+  </section>
+    
+</main>
+
+<footer>
+    <p>&copy; 2023 Curso de JavaScript Interactivo</p>
+</footer>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
