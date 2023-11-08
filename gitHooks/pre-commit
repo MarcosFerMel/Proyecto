@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Ejecuta ESLint para archivos HTML
+
+npm run lint
+
+if [ $? -ne 0 ]; then
+    echo "ESLint encontró problemas. Abortando commit."
+    exit 1
+fi
+
+# Verificar la presencia de caracteres extraños
+
+if git diff --cached --name-only | xargs grep --color='auto' -n '[áâàéèêíìîóòôúùû]'; then
+    echo "Se encontraron caracteres extraños en los cambios a ser 'commited'."
+    exit 1
+fi

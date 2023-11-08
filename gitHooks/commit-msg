@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Captura el mensaje de commit desde el archivo proporcionado
+COMMIT_MSG_FILE=$1
+COMMIT_MSG=$(cat "$COMMIT_MSG_FILE")
+
+# Define una expresión regular para tu formato de mensaje de commit
+REQUIRED_PATTERN="^MOTIVO DEL COMMIT: .+IMPLEMENTACIÓN: .+"
+
+if ! echo "$COMMIT_MSG" | grep -qE "$REQUIRED_PATTERN"; then
+    echo "ERROR: Tu mensaje de commit no sigue el formato requerido."
+    exit 1
+fi
