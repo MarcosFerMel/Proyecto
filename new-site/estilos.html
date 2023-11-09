@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Curso JavaScript interactivo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <header>
+    <h1>Curso de JavaScript Interactivo</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contenido.html">Modificar contenido HTML</a></li>
+        <li><a href="estilos.html">Modificar estilos CSS</a></li>
+        <li><a href="atributos.html">Modificar atributos HTML</a></li>
+    </ul>
+</nav>
+    
+ 
+<main>
+    <section id="intro">
+
+      <h1>¿Qué puede hacer JavaScript?</h1>
+
+      <p id="demo">JavaScript puede cambiar los estilos de un elemento HTML.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.backgroundColor='yellow'">Click Me!</button>
+
+
+  <h2>Código empleado:</h2>
+  <img src="img/estilos.jpg" alt="Modifica estilos html">
+
+      <p><h3>Explicación:</h3></p>
+      <p>En este ejemplo, cuando se hace clic en el botón "Click Me!", se ejecuta la función onclick que cambia el backgroundColor del elemento con el id demo a amarillo.</p>
+      <p>Cuando el usuario hace clic en el botón "Click Me!", la función onclick se activa. Utiliza document.getElementById('demo') para encontrar el elemento &ltp> con el ID demo. Una vez que se encuentra el elemento, cambia la propiedad style.backgroundColor del elemento a 'yellow', lo que hace que el fondo del párrafo se vuelva amarillo.</p>
+        </section>
+    
+</main>
+
+<footer>
+    <p>&copy; 2023 Curso de JavaScript Interactivo</p>
+</footer>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
