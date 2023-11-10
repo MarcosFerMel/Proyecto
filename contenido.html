@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Curso JavaScript interactivo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <header>
+    <h1>Curso de JavaScript Interactivo</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contenido.html">Modificar contenido HTML</a></li>
+        <li><a href="estilos.html">Modificar estilos CSS</a></li>
+        <li><a href="atributos.html">Modificar atributos HTML</a></li>
+    </ul>
+</nav>
+    
+ 
+<main>
+    <section id="intro">
+
+      <h1>¿Qué puede hacer JavaScript?</h1>
+
+      <p id="demo">JavaScript puede cambiar el contenido de HTML.</p>
+  
+  <button type="button" onclick='document.getElementById("demo").innerHTML = "¡Adiós, JavaScript!"'>Haz clic en mí</button>
+
+  <h2>Código empleado:</h2>
+  <img src="img/modificar.jpg" alt="Modifica contenido html">
+
+      <p><h3>Explicación:</h3></p>
+      <p>Las etiquetas &lth1&gt definen un encabezado de primer nivel que plantea la pregunta "¿Qué puede hacer JavaScript?".</p>
+      <p>&ltp id="demo"&gtJavaScript puede cambiar el contenido de HTML.&lt/p&gt: Define un párrafo con un id único de "demo". El uso del id permite a JavaScript identificar y seleccionar este elemento de manera única para poder manipularlo.</p>
+      <p>&ltbutton type="button" onclick='...'>Haz clic en mí&lt/button>: Define un botón que, cuando se hace clic en él, ejecutará el código JavaScript proporcionado en el atributo onclick. El atributo type="button" indica que no es un botón de envío de formulario, sino un botón genérico.</p>
+      <p>onclick='document.getElementById("demo").innerHTML = "¡Adiós, JavaScript!"': Es un manejador de eventos que se activa cuando el usuario hace clic en el botón. La función document.getElementById("demo") selecciona el elemento HTML con el id "demo", y la propiedad innerHTML se utiliza para cambiar el contenido de ese elemento al texto "¡Adiós, JavaScript!".</p>
+  </section>
+    
+</main>
+
+<footer>
+    <p>&copy; 2023 Curso de JavaScript Interactivo</p>
+</footer>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
